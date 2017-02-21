@@ -1,0 +1,20 @@
+name: nova-reader
+version: "0.1.0"
+author: Jianing Yang <jianingy.yang@gmail.com>
+about: read air quality data from Nova SDS11
+args:
+  - verbose:
+      short: v
+      multiple: true
+      help: sets the level of verbosity
+  - port:
+      short: p
+      long: port
+      help: sets the serial port of reading data
+      takes_value: true
+  - interval:
+      short: i
+      long: interval
+      help: interval between two reads
+      takes_value: true
+      default_value: '5'

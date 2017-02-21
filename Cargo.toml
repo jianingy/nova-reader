@@ -1,0 +1,11 @@
+[package]
+name = "nova-reader"
+version = "0.1.0"
+authors = ["Jianing Yang"]
+
+[dependencies]
+clap = { version = "2.20", default-features = false, features = ["suggestions", "yaml"] }
+error-chain = "0.9"
+serial = "0.3"
+env_logger = "0.3"
+log = "0.3"
